@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Creates file, displays text and deletes file
 terminator() {
-rm/var/run/myscript.pid
-exit
+      rm/var/run/myscript.pid
+      exit
 }
 echo "$$" > /var/run/myscript.pid
 while true
