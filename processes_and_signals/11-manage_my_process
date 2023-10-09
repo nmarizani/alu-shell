@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 #Manages the script manage_my_process.
 
+terminator() {
+  rm /var/run/myscript.pid
+  exit
+}
+
 if [ "$1" == "start" ]
 then
 	./manage_my_process &
